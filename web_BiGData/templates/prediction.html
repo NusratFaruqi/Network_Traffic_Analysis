@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <a class="menu" href="{{ url_for('dashboard')}}">Dashboard</a>
+    <div class="predictions">
+      <div class="result">
+        <h1>Prediction Result</h1>
+        <p>Predicted Class: {{ prediction }}</p>
+      </div>
+    </div>
+  </body>
+</html>

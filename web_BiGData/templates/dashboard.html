@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Social Media Network Traffic Analysis | PySpark Cross Validator Model
+      Prediction
+    </title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <h1>Social Media Network Traffic Analysis</h1>
+
+    <form method="POST">
+      {% for col_name in X %}
+      <label for="{{ col_name }}">{{ col_name }}:</label>
+      <input
+        type="number"
+        step="any"
+        id="{{ col_name }}"
+        name="{{ col_name }}"
+        value="0"
+        min="0"
+      />
+      <br />
+      {% endfor %}
+      <input type="submit" value="Predict" />
+    </form>
+  </body>
+</html>
